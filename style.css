@@ -77,7 +77,6 @@ h1 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     line-height: 1.1;
-    transform: scaleX(0.95);
     transform-origin: center;
 }
 
@@ -152,14 +151,16 @@ nav.scrolled {
     text-align: center;
     background: radial-gradient(circle at 50% 50%, var(--primary-container), transparent 80%);
     position: relative;
-    padding: 100px 0;
+    padding: 120px 0 100px;
 }
 
 .hero-content {
+    width: 100%;
     max-width: 900px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0 auto;
 }
 
 .app-icon-hero {
@@ -279,9 +280,10 @@ section {
     display: flex;
     overflow-x: auto;
     gap: 40px;
-    padding: 60px 0;
+    padding: 60px 24px;
     scroll-snap-type: x mandatory;
     scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
 }
 
 .screenshots img {
