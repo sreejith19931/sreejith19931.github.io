@@ -70,10 +70,31 @@ h1, h2, h3, .btn {
     letter-spacing: -0.04em;
 }
 
+h1 {
+    font-size: 3.8rem;
+    margin-bottom: 24px;
+    background: linear-gradient(135deg, var(--on-surface) 30%, var(--primary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1.1;
+    transform: scaleX(0.95);
+    transform-origin: center;
+}
+
+.tagline {
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: var(--on-surface-variant);
+    margin-bottom: 48px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* Scroll Reveal Base */
 .reveal {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(20px);
     transition: all 0.8s cubic-bezier(0.2, 1, 0.3, 1);
 }
 
@@ -124,44 +145,30 @@ nav.scrolled {
 
 /* Hero Section */
 .hero {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     background: radial-gradient(circle at 50% 50%, var(--primary-container), transparent 80%);
     position: relative;
-    padding-top: 80px;
+    padding: 100px 0;
 }
 
 .hero-content {
     max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .app-icon-hero {
-    width: 180px;
-    height: 180px;
+    width: 160px;
+    height: 160px;
     margin-bottom: 40px;
     border-radius: 40px;
     box-shadow: 0 20px 50px var(--shadow);
     transition: all 0.5s ease;
-}
-
-h1 {
-    font-size: 5rem;
-    margin-bottom: 24px;
-    background: linear-gradient(135deg, var(--on-surface) 30%, var(--primary));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    line-height: 1.1;
-    transform: scaleX(0.95);
-}
-
-.tagline {
-    font-size: 2rem;
-    font-weight: 300;
-    color: var(--on-surface-variant);
-    margin-bottom: 48px;
 }
 
 .scroll-indicator {
@@ -278,11 +285,11 @@ section {
 }
 
 .screenshots img {
-    height: 800px;
-    border-radius: 60px;
+    height: 650px;
+    border-radius: 50px;
     box-shadow: 0 40px 80px var(--shadow);
     scroll-snap-align: center;
-    border: 12px solid var(--surface);
+    border: 10px solid var(--surface);
     transition: transform 0.5s ease;
 }
 
