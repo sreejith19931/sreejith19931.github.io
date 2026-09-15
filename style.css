@@ -43,6 +43,7 @@
 
 body {
     font-family: 'Space Grotesk', sans-serif;
+    font-weight: 400;
     background-color: var(--surface);
     color: var(--on-surface);
     line-height: 1.7;
@@ -59,8 +60,8 @@ body {
 /* Typography Enhancements */
 h1, h2, h3, .btn {
     font-family: 'Syne', sans-serif;
-    font-weight: 800;
-    letter-spacing: -0.02em;
+    font-weight: 700;
+    letter-spacing: -0.01em;
 }
 
 /* Hero Section */
@@ -95,12 +96,12 @@ h1, h2, h3, .btn {
 }
 
 h1 {
-    font-size: 5.5rem;
+    font-size: 4.5rem;
     margin-bottom: 16px;
     background: linear-gradient(135deg, var(--on-surface) 30%, var(--primary));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    line-height: 1;
+    line-height: 1.1;
 }
 
 .tagline {
@@ -240,6 +241,14 @@ footer {
     padding: 100px 0;
     background-color: var(--surface-variant);
     border-top: 1px solid var(--outline);
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
 }
 
 .footer-content h3 {
