@@ -11,15 +11,27 @@
 </head>
 <body>
 
-    <header class="hero">
-        <div class="container">
-            <img src="images/app_logo.svg" alt="Rhythm Logo" class="app-icon">
-            <h1>Rhythm</h1>
-            <p class="tagline">An elegant, open-source music player designed for modern Android. High fidelity audio meets a UI that breathes with your music.</p>
-            <div class="btn-group">
-                <a href="https://github.com/sreejith19931/Rhythm-App/releases" class="btn btn-primary">Download APK</a>
-            </div>
+    <nav id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="nav-logo">
+                <img src="images/app_logo.svg" alt="Rhythm Logo">
+                <span>Rhythm</span>
+            </a>
+            <a href="#download" class="btn btn-primary" style="padding: 10px 24px; font-size: 1rem;">Get APK</a>
+        </div>
+    </nav>
 
+    <header class="hero">
+        <div class="container hero-content reveal active">
+            <img src="images/app_logo.svg" alt="Rhythm App Icon" class="app-icon-hero">
+            <h1>Rhythm</h1>
+            <p class="tagline">An elegant, open-source music player designed for modern Android. Experience audio that breathes.</p>
+            <a href="#features" class="scroll-indicator">↓</a>
+        </div>
+    </header>
+
+    <section id="intro">
+        <div class="container reveal">
             <div class="value-props">
                 <div class="value-card">
                     <h3>Pure Performance</h3>
@@ -31,40 +43,40 @@
                 </div>
             </div>
         </div>
-    </header>
+    </section>
 
     <section id="features">
         <div class="container">
-            <h2 class="section-title">Experience the Detail</h2>
-            <p class="section-subtitle">Rhythm isn't just a player; it's a toolkit for the discerning listener.</p>
+            <h2 class="section-title reveal">Experience the Detail</h2>
+            <p class="section-subtitle reveal">Rhythm isn't just a player; it's a toolkit for the discerning listener.</p>
 
             <div class="features-grid">
-                <div class="feature-card">
+                <div class="feature-card reveal">
                     <span class="icon">🎨</span>
                     <h3>Material You Theming</h3>
                     <p>The entire interface transforms to complement the colors of your album artwork, creating a truly immersive visual experience that changes with every track.</p>
                 </div>
-                <div class="feature-card">
+                <div class="feature-card reveal">
                     <span class="icon">🎚️</span>
                     <h3>Studio-Grade EQ</h3>
                     <p>A precision 5-band equalizer with custom presets, environmental reverb, and bass boost. Fine-tune your audio to match your headphones perfectly.</p>
                 </div>
-                <div class="feature-card">
+                <div class="feature-card reveal">
                     <span class="icon">✂️</span>
                     <h3>Precision Trimmer</h3>
                     <p>Found the perfect hook? Use the built-in trimmer to create high-quality ringtones or notification clips directly from your local library.</p>
                 </div>
-                <div class="feature-card">
+                <div class="feature-card reveal">
                     <span class="icon">🚗</span>
                     <h3>Optimized Driving</h3>
                     <p>A dedicated interface with large, tactile controls and high-contrast visuals designed for safe, distraction-free use while on the move.</p>
                 </div>
-                <div class="feature-card">
+                <div class="feature-card reveal">
                     <span class="icon">🧹</span>
                     <h3>Library Janitor</h3>
                     <p>Automatically repair missing metadata and fetch high-resolution album art. Keep your collection organized and looking its absolute best.</p>
                 </div>
-                <div class="feature-card">
+                <div class="feature-card reveal">
                     <span class="icon">📜</span>
                     <h3>Seamless Lyrics</h3>
                     <p>Dive deeper into your music with integrated support for both synced and static lyrics. Never miss a word of your favorite anthems.</p>
@@ -75,9 +87,9 @@
 
     <section id="gallery" class="gallery-section">
         <div class="container">
-            <h2 class="section-title">A Visual Journey</h2>
-            <p class="section-subtitle">Modern design language meets functional simplicity.</p>
-            <div class="screenshots">
+            <h2 class="section-title reveal">A Visual Journey</h2>
+            <p class="section-subtitle reveal">Modern design language meets functional simplicity.</p>
+            <div class="screenshots reveal">
                 <img src="images/screenshot_tracks.png" alt="Track List">
                 <img src="images/screenshot_player.png" alt="Now Playing">
                 <img src="images/screenshot_driving.png" alt="Driving Mode">
@@ -85,15 +97,15 @@
                 <img src="images/screenshot_trimmer.png" alt="Audio Trimmer">
                 <img src="images/screenshot_folders.png" alt="Folder Navigation">
             </div>
-            <p style="text-align: center; margin-top: 32px; color: var(--on-surface-variant); font-weight: 500;">← Swipe to explore the interface →</p>
+            <p class="reveal" style="text-align: center; margin-top: 32px; color: var(--on-surface-variant); font-weight: 500;">← Swipe to explore the interface →</p>
         </div>
     </section>
 
     <section id="tech">
         <div class="container" style="text-align: center;">
-            <h2 class="section-title">Built for Modern Android</h2>
-            <p class="section-subtitle">Leveraging the latest APIs to deliver a future-proof experience.</p>
-            <div class="tech-badges">
+            <h2 class="section-title reveal">Built for Modern Android</h2>
+            <p class="section-subtitle reveal">Leveraging the latest APIs to deliver a future-proof experience.</p>
+            <div class="tech-badges reveal">
                 <span class="tech-badge">Kotlin First</span>
                 <span class="tech-badge">Jetpack Compose</span>
                 <span class="tech-badge">Media3 / ExoPlayer</span>
@@ -104,8 +116,16 @@
         </div>
     </section>
 
+    <section id="download" class="cta-section">
+        <div class="container cta-content reveal">
+            <h2 class="section-title" style="margin-bottom: 32px;">Ready for Rhythm?</h2>
+            <p class="tagline" style="margin-bottom: 48px;">Join the community and experience your local music collection like never before.</p>
+            <a href="https://github.com/sreejith19931/Rhythm-App/releases" class="btn btn-primary">Download APK Now</a>
+        </div>
+    </section>
+
     <footer>
-        <div class="container">
+        <div class="container reveal">
             <div class="footer-content">
                 <img src="images/app_logo.svg" alt="Rhythm" style="width: 80px; margin-bottom: 12px;">
                 <h3 style="color: var(--primary);">Rhythm Music</h3>
@@ -119,5 +139,33 @@
         </div>
     </footer>
 
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+
+        // Scroll reveal animation
+        const reveal = () => {
+            const reveals = document.querySelectorAll('.reveal');
+            for (let i = 0; i < reveals.length; i++) {
+                const windowHeight = window.innerHeight;
+                const elementTop = reveals[i].getBoundingClientRect().top;
+                const elementVisible = 150;
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add('active');
+                }
+            }
+        };
+
+        window.addEventListener('scroll', reveal);
+        // Initial check
+        reveal();
+    </script>
 </body>
 </html>
